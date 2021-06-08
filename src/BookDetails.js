@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { booksContext } from "./contexts/booksContext";
 import "./BookDetails.css";
-// import FeatherIcon from "feather-icons-react";
+
 
 function BookDetails(props) {
   const { books, setBooks } = useContext(booksContext);
@@ -23,7 +23,8 @@ function BookDetails(props) {
                                 <img src={book.volumeInfo.imageLinks.thumbnail} style={{ width: '400px'}}/>
                                 <div className="button">
                                    
-                                   
+                                     <button><i className="fa fa-download "></i> Download</button>
+                                    <button><i className="fa fa-microphone"></i> Find near me</button>
                                   
                                 </div>
                             </div>
@@ -34,11 +35,16 @@ function BookDetails(props) {
                             <span>Free</span>
                             <div className="heading">
                                 <h3>{book.volumeInfo.title}</h3>
-                                <div className="evaluation">
-                           
-                                    <span>{book.volumeInfo.averageRating} Ratings</span>
+                                <div >
+                                <i className="fa fa-star" style={{color: 'orange'}}></i>
+                                <i className="fa fa-star" style={{color: 'orange'}} ></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+                                <i className="fa fa-star"></i>
+
+                                    <span>({book.volumeInfo.averageRating} Rating )</span>
                                 </div>
-                               
+                                {/* <button> <i className="fa fa-plus"></i> Add To Shelf Book</button> */}
                             </div>
                             <ul className="list-unstyled details">
                                 <li><span>Author</span>: {book.volumeInfo.authors[0]}</li>
@@ -64,12 +70,16 @@ function BookDetails(props) {
                             <h4>Popular Reviews (5)</h4>
                             <div className="box-person">
                                 <div className="img">
-                              
+                                {/* <i className="fa fa-user"></i> */}
                                 </div>
                                 <div className="info-details">
                                     <h5>Adel Ali</h5>
                                     <div className="evaluation">
-                                  
+                                    <i className="fa fa-star" style={{color: 'orange'}}></i>
+                                    <i className="fa fa-star" style={{color: 'orange'}} ></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
                                     </div>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
@@ -81,6 +91,11 @@ function BookDetails(props) {
                                 <div className="info-details">
                                     <h5>Esraa Mohamed</h5>
                                     <div className="evaluation">
+                                    <i className="fa fa-star" style={{color: 'orange'}}></i>
+                                    <i className="fa fa-star" style={{color: 'orange'}} ></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
                                   
                                     </div>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -97,7 +112,11 @@ function BookDetails(props) {
                                 <div className="info-details">
                                     <h5>Ola Gamal</h5>
                                     <div className="evaluation">
-                            
+                                    <i className="fa fa-star" style={{color: 'orange'}}></i>
+                                    <i className="fa fa-star" style={{color: 'orange'}} ></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
                                     </div>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     <a href="#" className="report">Report</a>
@@ -110,6 +129,11 @@ function BookDetails(props) {
                                 <div className="info-details">
                                     <h5>Ahmed Emara</h5>
                                     <div className="evaluation ">
+                                    <i className="fa fa-star" style={{color: 'orange'}}></i>
+                                    <i className="fa fa-star" style={{color: 'orange'}} ></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
+                                    <i className="fa fa-star"></i>
                                    
                                     </div>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
