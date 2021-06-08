@@ -14,7 +14,7 @@ function BooksList() {
     <ItemsCarousel
       requestToChangeActive={setActiveItemIndex}
       activeItemIndex={activeItemIndex}
-      numberOfCards={4}
+      numberOfCards={10}
       gutter={20}
       leftChevron={<button>{'<'}</button>}
       rightChevron={<button>{'>'}</button>}
