@@ -5,7 +5,7 @@ import ItemsCarousel from 'react-items-carousel';
 
 import { BrowserRouter , Link } from "react-router-dom";
 
-function ChildComponent() {
+function BooksList() {
   const { books, setBooks } = useContext(booksContext);
   const [activeItemIndex, setActiveItemIndex] = useState(0);
   const chevronWidth = 40;
@@ -43,4 +43,4 @@ function ChildComponent() {
   );
 }
 
-export default ChildComponent;
+export default BooksList;
